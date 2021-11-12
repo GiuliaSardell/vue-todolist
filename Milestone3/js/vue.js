@@ -23,17 +23,32 @@ const app = new Vue({
     ],
 
     newString: '',
+    error : false,
 
 
   },
   methods:{
+
     removeToDo(index){
       this.thingsToDo.splice(index,1)
     },
 
-    addToDo(){
-      this.thingsToDo.push({ text: this.newString, done: false })
+    addToDoIf(){
+      if(this.newString.length < 3){
+        this.error = true;
+
+        setTimeout(() =>{
+          this.error = false
+        },2000)
+
+      }else{
+        this.thingsToDo.push({ text: this.newString, done: false })
+      }
     }
+
+    // addToDo(){
+      
+    // }
   }
 
 

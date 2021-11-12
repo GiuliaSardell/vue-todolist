@@ -18,12 +18,13 @@
   <div id="app">
     <div class="container d-flex flex-column justify-content-center align-items-center">
       <h2>Lista delle cose da fare</h2>
+      <h5 v-if="error">Inserisci almeno 3 caratteri</h5>
       <input v-model= 'newString'
-      @keyup.enter="addToDo"
+      @keyup.enter="addToDoIf"
 
       type="text" placeholder="Cosa devo fare?">
 
-      <button @click="addToDo"
+      <button @click="addToDoIf"
       type="button" class="btn btn-outline-dark">Invia</button>
       <ul>
         <li v-for="(thingToDo,index) in thingsToDo">
