@@ -9,22 +9,28 @@ const app = new Vue({
       },
       {
         text: 'Inviare il pacco',
-        done: false 
+        done: true
       },
       {
         text: 'Pagare la bolletta della luce',
-        done: false 
+        done: true 
       },
       {
         text: 'Cercare regali di natale',
         done: false 
-      },
+      }
 
-
-    ]
+    ],
+    isActive: false,
  
     // che indica se il todo è stato fatto oppure no
   },
+  methods:{
+
+    barraTesto(){
+
+    }
+  }
 
 
 

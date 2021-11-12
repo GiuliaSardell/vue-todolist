@@ -16,9 +16,14 @@
   <div id="app">
     <div class="container d-flex flex-column justify-content-center align-items-center">
       <h2>Lista delle cose da fare</h2>
-      <input type="text" placeholder="Cosa devi fare?">
+      <input type="text" placeholder="Cosa devo fare?">
       <ul>
-        <li v-for="thingToDo in thingsToDo">{{thingToDo.text}}</li>
+        <li
+        v-for="thingToDo in thingsToDo"
+        v-bind:class="{ barrato: isActive }"
+        v-on:click="isActive = !isActive"
+        >
+        {{thingToDo.text}}</li>
       </ul>
     </div>
 
