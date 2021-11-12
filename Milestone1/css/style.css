@@ -1,0 +1,34 @@
+body{
+  height: 100%;
+  background-color: pink !important;
+}
+
+.container{
+  margin-top: 50px;
+}
+
+h2{
+  margin: 0 auto;
+}
+
+input{
+  width: 500px;
+  margin: 20px auto !important;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px grey;
+  border: 1px solid black;
+}
+
+ul li{
+  list-style: none;
+  width: 500px;
+  background-color: white;
+  padding: 15px;
+}
+
+ul{
+overflow: hidden;
+ padding: 0 !important;
+ border-radius: 10px !important;
+}
