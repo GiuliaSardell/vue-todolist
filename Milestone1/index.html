@@ -20,8 +20,8 @@
       <ul>
         <li
         v-for="thingToDo in thingsToDo"
-        v-bind:class="{ barrato: isActive }"
-        v-on:click="isActive = !isActive"
+        v-bind:class="{ barrato: thingToDo.done }"
+        v-on:click="thingToDo.done = !thingToDo.done"
         >
         {{thingToDo.text}}</li>
       </ul>

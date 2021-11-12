@@ -21,16 +21,10 @@ const app = new Vue({
       }
 
     ],
-    isActive: false,
+    // isActive: false,
  
     // che indica se il todo è stato fatto oppure no
   },
-  methods:{
-
-    barraTesto(){
-
-    }
-  }
 
 
 
